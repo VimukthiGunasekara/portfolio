@@ -25,7 +25,7 @@ GitHub Repo URL: https://github.com/VimukthiGunasekara/portfolio
 
 ## 📺 [Mock-Up](#table-of-contents)
 
-![Screenshot](./assest/images/desktop-screenshot.png)
+![Screenshot](./assets/images/desktop-screenshot.png)
          
 ## 📑 [License](#table-of-contents)
 <img src="https://img.shields.io/badge/license-MIT-yellow"/>
