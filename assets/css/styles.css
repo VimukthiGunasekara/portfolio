@@ -185,6 +185,10 @@ section.resume-section .resume-section-content {
     border-color: var(--bs-indigo);
 }
 
+.pimage{
+    border-radius: 10px;
+}
+
 @media (min-width: 768px) {
     section.resume-section {
         min-height: 100vh;
