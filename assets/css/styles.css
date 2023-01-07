@@ -163,7 +163,10 @@ section.resume-section .resume-section-content {
 }
 
 .tags:hover {
-    color: #c8cfd5;
+    color: var(--bs-indigo);
+    background-color: white;
+    border-style: solid;
+    border-color: var(--bs-indigo);
 }
 
 .blog-card {
@@ -176,9 +179,11 @@ section.resume-section .resume-section-content {
 }
 
 .blog-card:hover {
-    color: #c8cfd5;
+    color: var(--bs-indigo);
+    background-color: white;
+    border-style: solid;
+    border-color: var(--bs-indigo);
 }
-
 
 @media (min-width: 768px) {
     section.resume-section {
