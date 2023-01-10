@@ -175,6 +175,10 @@ section.resume-section .resume-section-content {
     border-radius: 10px;
 }
 
+.model-box {
+    padding: 25px;
+}
+
 @media (min-width: 768px) {
     section.resume-section {
         min-height: 100vh;
