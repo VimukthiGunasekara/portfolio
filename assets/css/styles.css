@@ -179,10 +179,37 @@ section.resume-section .resume-section-content {
     padding: 25px;
 }
 
+#filter-buttons button {
+    border-radius: 3px;
+    background: white;
+    border-color: transparent;
+  }
+  #filter-buttons button:hover {
+    background: #ddd;
+  }
+  #filter-buttons button.active {
+    color: white;
+    background: var(--bs-indigo);
+  }
+  #filterable-cards .card {
+    width: 15rem;
+    border: 2px solid transparent;
+  }
+  #filterable-cards .card.hide {
+    display: none;
+  }
+
 @media (min-width: 768px) {
     section.resume-section {
         min-height: 100vh;
     }
+
+    #filterable-cards {
+        justify-content: center;
+      }
+      #filterable-cards .card {
+        width: calc(32%);
+      }
 }
 
 @media (min-width: 992px) {

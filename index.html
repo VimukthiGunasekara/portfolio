@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <!-- CSS-->
     <link href="./assets/css/styles.css" rel="stylesheet" />
+    <!-- JS-->
+    <script src="./assets/js/app.js" defer></script>
 </head>
 
 <body id="page-top">
@@ -49,16 +51,10 @@
                     <span class="text-color">Gunasekara</span>
                 </h1>
                 <div class="subheading mb-5 ">
-                    Court Street, St. Catherines, ON, Canada · (905) 324-8724 ·
+                    Dundas Street, London, ON, Canada · (905) 324-8724 ·
                     <a class="text-color" href="mailto:vimukthisadaruwan65@gmail.com">vimukthisadaruwan65@gmail.com</a>
                 </div>
-                <p class="lead mb-5">I'm a software engineer who is passionate about making contributing to open-source
-                    more approachable, creating technology to elevate people, and building community. I'm hold a <b>
-                        BS.c in Information Technology </b>from the <b> University of Rajarata</b> and a <b> Certificate
-                        in Full Stack Web Development </b> (ongoing) from the <b> University of Toronto</b>.Innovative
-                    problem-solver who is passionate about developing apps with a focus on mobile-first design and
-                    development.Creativity, teamwork, and ability to develop projects from concept to completion are
-                    strong points. Furthermore, I'm an experienced mobile application developer Google Play Store 📱</p>
+                <p class="lead mb-5">Passionate and solutions-driven web developer with a<b> certificate in full-stack development </b>from <b> the University of Toronto </b>b> and a<b>  BSc in information and technology </b> from <b> the Rajarata University of Sri Lanka.</b>  Develop skills in JavaScript, jQuery, Bootstrap, Foundation, Node.js, Express, TDD, MySQL, MongoDB, Oracle (PL/SQL), WordPress, Shopify and responsive web design. Innovative problem-solver passionate with analytical skills about developing web apps; focused on mobile-first design and development. Strengths in creativity, teamwork, and building projects from ideation to execution.</p>
                 <div class="social-icons">
                     <a class="social-icon" href="https://www.linkedin.com/in/vimukthi-gunasekara/"><i
                             class="fab fa-linkedin-in"></i></a>
@@ -120,10 +116,25 @@
             <div class="resume-section-content">
                 <!-- Gallery -->
                 <div class="row">
-                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <div class="row mt-5 mb-2" id="filter-buttons">
+                        <div class="col-12">
+                            <button class="btn mb-2 me-1 active" data-filter="all">Show All</button>
+                            <button class="btn mb-2 mx-1" data-filter="Front-End">Front-End</button>                            
+                            <button class="btn mb-2 mx-1" data-filter="Back-End">Back-End</button>
+                            <button class="btn mb-2 mx-1" data-filter="Inquirer-Module">Inquirer Module</button>
+                            <button class="btn mb-2 mx-1" data-filter="WordPress">WordPress</button>
+                        </div>
+                    </div>
 
-                        <img src="./assets/images/kanban-board.png" data-bs-toggle="modal" data-bs-target="#pg1Modal"
-                            class="w-100 shadow-1-strong rounded mb-4" />
+                    <div class="row px-2 mt-4 gap-3" id="filterable-cards">
+                        <div class="card p-0" data-bs-toggle="modal" data-bs-target="#pg1Modal" data-name="Front-End">
+                            <img src="./assets/images/kanban-board.png" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Kanban-Board React App</h4>
+                                <p class="card-text">that can be used to implement kanban to manage work at a
+                                    personal or organizational level.</p>
+                            </div>
+                        </div>
                         <div class="modal fade" id="pg1Modal" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
 
@@ -168,8 +179,14 @@
                             </div>
                         </div>
 
-                        <img src="./assets/images/budget-tracker.png" data-bs-toggle="modal" data-bs-target="#btModal"
-                            class="w-100 shadow-1-strong rounded mb-4">
+                        <div class="card p-0" data-bs-toggle="modal" data-bs-target="#btModal" data-name="Front-End">
+                            <img src="./assets/images/budget-tracker.png" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Budget Tracker Web App</h4>
+                                <p class="card-text">An application that tracks income and expenses with different
+                                    currencies.</p>
+                            </div>
+                        </div>
                         <div class="modal fade" id="btModal" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">
@@ -212,8 +229,14 @@
                             </div>
                         </div>
 
-                        <img src="./assets/images/get.gif" data-bs-toggle="modal" data-bs-target="#pgModal"
-                            class="w-100 shadow-1-strong rounded mb-4" />
+                        <div class="card p-0" data-bs-toggle="modal" data-bs-target="#pgModal" data-name="Back-End">
+                            <img src="./assets/images/get.gif" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">E-Commerce Back End</h4>
+                                <p class="card-text">back-end for an e-commerce site using an Express.js API and a
+                                    Sequelize database.</p>
+                            </div>
+                        </div>
                         <div class="modal fade" id="pgModal" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
 
@@ -253,8 +276,13 @@
                             </div>
                         </div>
 
-                        <img src="./assets/images/work-day-scheduler.png" data-bs-toggle="modal"
-                            data-bs-target="#wdsModal" class="w-100 shadow-1-strong rounded mb-4" />
+                        <div class="card p-0" data-bs-toggle="modal" data-bs-target="#wdsModal" data-name="Front-End">
+                            <img src="./assets/images/work-day-scheduler.png" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Work Day Scheduler 📅 Generator</h4>
+                                <p class="card-text">A simple calendar app for scheduling your work day.</p>
+                            </div>
+                        </div>
                         <div class="modal fade" id="wdsModal" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
 
@@ -296,11 +324,15 @@
                             </div>
                         </div>
 
-                    </div>
-
-                    <div class="col-lg-4 mb-4 mb-lg-0">
-                        <img src="./assets/images/professional-readme-generator.png" data-bs-toggle="modal"
-                            data-bs-target="#prgModal" class="w-100 shadow-1-strong rounded mb-4" />
+                        <div class="card p-0" data-bs-toggle="modal" data-bs-target="#prgModal" data-name="Inquirer-Module">
+                            <img src="./assets/images/professional-readme-generator.png" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Professional Readme File
+                                    Generator</h4>
+                                <p class="card-text">GitHub README Generator Application and displays it on a newly
+                                    created README.md file.</p>
+                            </div>
+                        </div>
                         <div class="modal fade" id="prgModal" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
 
@@ -342,8 +374,14 @@
                             </div>
                         </div>
 
-                        <img src="./assets/images/team-profile-generator.png" data-bs-toggle="modal"
-                            data-bs-target="#tpgModal" class="w-100 shadow-1-strong rounded mb-4" />
+                        <div class="card p-0" data-bs-toggle="modal" data-bs-target="#tpgModal" data-name="Inquirer-Module">
+                            <img src="./assets/images/team-profile-generator.png" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Team Profile Generator</h4>
+                                <p class="card-text">This app generates a team profile and displays it on a newly
+                                    created HTML page.</p>
+                            </div>
+                        </div>
                         <div class="modal fade" id="tpgModal" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
 
@@ -386,14 +424,19 @@
                             </div>
                         </div>
 
-                        <img src="./assets/images/weather-dashboard.png" data-bs-toggle="modal"
-                            data-bs-target="#wdModal" class="w-100 shadow-1-strong rounded mb-4" />
+                        <div class="card p-0" data-bs-toggle="modal" data-bs-target="#wdModal" data-name="Front-End">
+                            <img src="./assets/images/weather-dashboard.png" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Weather Dashboard 🌦️</h4>
+                                <p class="card-text">A weather dashboard application that displays current weather and a 5-day forecast for a city.</p>
+                            </div>
+                        </div>
                         <div class="modal fade" id="wdModal" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content model-box">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="exampleModalLabel">Weather Dashboard</h4>
+                                        <h4 class="modal-title" id="exampleModalLabel">Weather Dashboard 🌦️</h4>
                                     </div>
                                     <div class="flex-grow-1">
                                         <div class="mb-3">A weather dashboard application that displays current weather
@@ -402,9 +445,7 @@
                                         <ul class="fa-ul mb-0">
                                             <li>
                                                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                                                Summary: A weather dashboard application that displays current weather
-                                                and a 5-day
-                                                forecast for a city.
+                                                Summary: A weather dashboard application that displays current weather and a 5-day forecast for a city.
                                             </li>
                                             <li>
                                                 <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -428,49 +469,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4 mb-4 mb-lg-0">
-                        <img src="./assets/images/vpac.png" data-bs-toggle="modal" data-bs-target="#vpacModal"
-                            class="w-100 shadow-1-strong rounded mb-4" />
-                        <div class="modal fade" id="vpacModal" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content model-box">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title" id="exampleModalLabel">VPAC Official Business Website
-                                        </h4>
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <div class="mb-3">Vpac Corrugated (PVT) LTD is a solid company manufacturing
-                                            quality corrugated boards and boxes for the direct and indirect exporters
-                                            and local market in Sri Lanka over a decade.</div>
-                                        <ul class="fa-ul mb-0">
-                                            <li>
-                                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                                Summary: Design, developed and implemented vpac Official web site.
-                                            </li>
-                                            <li>
-                                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                                Role: Sole author.
-                                            </li>
-                                            <li>
-                                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                                Tools: HTML-CSS-JavaScript, WordPress
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <a class="tags" href="https://vpac.lk/">Live
-                                            Preview</a>
-                                        <img src="./assets/images/vpac.png" class="img-fluid mt-4 pimage"
-                                            alt="Responsive image">
-                                    </div>
-                                </div>
+                        <div class="card p-0" data-bs-toggle="modal" data-bs-target="#skrModal" data-name="WordPress">
+                            <img src="./assets/images/sk-realtors-2.png" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">SK-Realtors Agent Website in
+                                    Toronto</h4>
+                                <p class="card-text"> Design, developed and implemented SK-Realtors Agent Website in
+                                    Toronto.</p>
                             </div>
                         </div>
-
-                        <img src="./assets/images/sk-realtors.png" data-bs-toggle="modal" data-bs-target="#skrModal"
-                            class="w-100 shadow-1-strong rounded mb-4" />
                         <div class="modal fade" id="skrModal" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">
@@ -510,8 +518,58 @@
                             </div>
                         </div>
 
-                        <img src="./assets/images/flymeinternational.png" data-bs-toggle="modal"
-                            data-bs-target="#fmModal" class="w-100 shadow-1-strong rounded mb-4" />
+                        <div class="card p-0" data-bs-toggle="modal" data-bs-target="#vpacModal" data-name="WordPress">
+                            <img src="./assets/images/vpac.png" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">VPAC Official Business Website</h4>
+                                <p class="card-text">Design, developed and implemented vpac Official web site.</p>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="vpacModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content model-box">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="exampleModalLabel">VPAC Official Business Website
+                                        </h4>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="mb-3">Vpac Corrugated (PVT) LTD is a solid company manufacturing
+                                            quality corrugated boards and boxes for the direct and indirect exporters
+                                            and local market in Sri Lanka over a decade.</div>
+                                        <ul class="fa-ul mb-0">
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                Summary: Design, developed and implemented vpac Official web site.
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                Role: Sole author.
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                                Tools: HTML-CSS-JavaScript, WordPress
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <a class="tags" href="https://vpac.lk/">Live
+                                            Preview</a>
+                                        <img src="./assets/images/vpac.png" class="img-fluid mt-4 pimage"
+                                            alt="Responsive image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card p-0" data-bs-toggle="modal" data-bs-target="#fmModal" data-name="WordPress">
+                            <img src="./assets/images/flymeinternational.png" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Flyme International Education
+                                    Consultants</h4>
+                                <p class="card-text"> Design, developed and implemented Flyme International Official
+                                    web site.</p>
+                            </div>
+                        </div>
                         <div class="modal fade" id="fmModal" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">
@@ -549,11 +607,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Gallery -->
 
-            </div>
+                    </div>
+                    <!-- Gallery -->
+
+                </div>
         </section>
         <hr class="m-0" />
 
@@ -567,22 +625,29 @@
                         <ul class="fa-ul mb-0">
                             <li>
                                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Developed and implemented gift shop e-commerce web applications using HTML5, CSS3, JavaScript, Bootstrap, React.js, and PL/SQL (Oracle/11g).</br>
-                                ●	Responsible for designing and developing the front-end development.</br>
-                                ●	Developed a sophisticated integrated system that includes invoice management, shopping cart functions, content management, account management, and site administration.</br>
-                                ●	2019's best in Project Award nominee.</br>
-                                ●	Figma was used as part of my collaboration with the product UI / UX team for a better customer experience. </br>
-                                ●	Managed time-sensitive updates, including content changes and database upgrades.</br>
-                                ●	Reports to: Gift Solutions Manager and Tech Lead</br></br>
-                                
+                                Developed and implemented gift shop e-commerce web applications using HTML5, CSS3,
+                                JavaScript, Bootstrap, React.js, and PL/SQL (Oracle/11g).</br>
+                                ● Responsible for designing and developing the front-end development.</br>
+                                ● Developed a sophisticated integrated system that includes invoice management, shopping
+                                cart functions, content management, account management, and site administration.</br>
+                                ● 2019's best in Project Award nominee.</br>
+                                ● Figma was used as part of my collaboration with the product UI / UX team for a better
+                                customer experience. </br>
+                                ● Managed time-sensitive updates, including content changes and database upgrades.</br>
+                                ● Reports to: Gift Solutions Manager and Tech Lead</br></br>
+
                             </li>
                             <li>
                                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Developed & implemented financial application using C# & database administration and development using PL/SQL. (Oracle/11g).</br>
-                                ●	Follow all best practices in agile methodologies such as daily sync-ups, sprint planning, sprint grooming, and demo sessions.</br>
-                                ●	Redesigned some privacy and reporting functions, which helped increase their efficiency by 25% per quarter.</br>
-                                ●	Collaborated with Sri Lankan central bank developers, technical leads, and project managers.</br>
-                                ●	Reports to: IT Manager and Tech Lead
+                                Developed & implemented financial application using C# & database administration and
+                                development using PL/SQL. (Oracle/11g).</br>
+                                ● Follow all best practices in agile methodologies such as daily sync-ups, sprint
+                                planning, sprint grooming, and demo sessions.</br>
+                                ● Redesigned some privacy and reporting functions, which helped increase their
+                                efficiency by 25% per quarter.</br>
+                                ● Collaborated with Sri Lankan central bank developers, technical leads, and project
+                                managers.</br>
+                                ● Reports to: IT Manager and Tech Lead
 
                             </li>
                         </ul>
@@ -597,10 +662,14 @@
                         <ul class="fa-ul mb-0">
                             <li>
                                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Developed, implemented, tested, and published the Braille Character Recognition and Translation into the Sinhala Text desktop application using C++, C#, and OpenCV.</br>
-                                ●	Captured and analyzed braille images and wrote an algorithm for image processing and braille recognition.</br>
-                                ●	Worked closely with Sri Lankan Army and Navy high-rank officers.</br></br>
-                                <a class="tags" href="https://swinternational.blogspot.com/2018/02/braille-character-recognition-and.html">More Details</a>
+                                Developed, implemented, tested, and published the Braille Character Recognition and
+                                Translation into the Sinhala Text desktop application using C++, C#, and OpenCV.</br>
+                                ● Captured and analyzed braille images and wrote an algorithm for image processing and
+                                braille recognition.</br>
+                                ● Worked closely with Sri Lankan Army and Navy high-rank officers.</br></br>
+                                <a class="tags"
+                                    href="https://swinternational.blogspot.com/2018/02/braille-character-recognition-and.html">More
+                                    Details</a>
 
                             </li>
                         </ul>
@@ -686,7 +755,7 @@
                             href="https://swinternational.blogspot.com/2018/09/how-to-select-max-or-latest-date-time.html">How
                             to select max or latest date & time from Data list</a>
                     </div>
-                </div>               
+                </div>
             </div>
         </section>
         <hr class="m-0" />
