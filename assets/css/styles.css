@@ -183,21 +183,35 @@ section.resume-section .resume-section-content {
     border-radius: 3px;
     background: white;
     border-color: transparent;
-  }
-  #filter-buttons button:hover {
+}
+
+#filter-buttons button:hover {
     background: #ddd;
-  }
-  #filter-buttons button.active {
+}
+
+#filter-buttons button.active {
     color: white;
     background: var(--bs-indigo);
-  }
-  #filterable-cards .card {
+}
+
+#filterable-cards .card {
     width: 15rem;
     border: 2px solid transparent;
-  }
-  #filterable-cards .card.hide {
+}
+
+#filterable-cards .card.hide {
     display: none;
-  }
+}
+
+.tools {
+    font-style: italic;
+    color: #6c757d;
+    border: 1px solid var(--bs-indigo);
+    border-radius:8px;
+    padding: 5px 10px;
+    background-color: #f8f9fa;
+    display: inline-block;
+}
 
 @media (min-width: 768px) {
     section.resume-section {
@@ -206,10 +220,11 @@ section.resume-section .resume-section-content {
 
     #filterable-cards {
         justify-content: center;
-      }
-      #filterable-cards .card {
+    }
+
+    #filterable-cards .card {
         width: calc(32%);
-      }
+    }
 }
 
 @media (min-width: 992px) {
