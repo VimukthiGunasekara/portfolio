@@ -237,7 +237,7 @@ section.resume-section .resume-section-content {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .main-img {
         max-width: 20rem;
         max-height: 20rem;
