@@ -9,6 +9,7 @@
 }
 
 body {
+    display: block;
     color: var(--white-color);
     font-family: 'Poppins', sans-serif;
     background-color: var(--primary-color);
@@ -330,5 +331,18 @@ input:checked+.slider:before {
     .text b {
         transform-origin: 0 145px;
         font-size: 0.8rem;
+    }
+
+    .text-hero{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .we-logo{
+        margin-top: -45px;
+    }
+
+    .ng-margin{
+        margin-top: -40px;
     }
 }
