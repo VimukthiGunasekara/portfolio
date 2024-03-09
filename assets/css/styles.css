@@ -162,6 +162,10 @@ body {
     animation: rotateAnimation 60s linear infinite;
 }
 
+.card-tag{
+    font-size: 0px;
+}
+
 .publ-img {
     background-size: cover;
 }

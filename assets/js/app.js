@@ -24,18 +24,22 @@ colorCheckbox.addEventListener('change', function() {
     }
 });
 
-const filterButtons = document.querySelectorAll("#filter-buttons button");
-const filterableCards = document.querySelectorAll("#filterable-cards .card");
-// Function to filter cards based on filter buttons
-const filterCards = (e) => {
-    document.querySelector("#filter-buttons .active").classList.remove("active");
-    e.target.classList.add("active");
-    filterableCards.forEach(card => {
-        // show the card if it matches the clicked filter or show all cards if "all" filter is clicked
-        if(card.dataset.name === e.target.dataset.filter || e.target.dataset.filter === "all") {
-            return card.classList.replace("hide", "show");
+// Project filter
+var filter = (filter) => {
+    const cards = document.getElementsByClassName("projects");
+    for (let i = 0; i < cards.length; i++) {
+        let title = cards[i].querySelector(".card .card-body .card-tag");
+        if (title.innerText.indexOf(filter) > -1) {
+            cards[i].classList.remove("d-none")
+        } else {
+            cards[i].classList.add("d-none")
         }
-        card.classList.add("hide");
-    });
+    }
 }
-filterButtons.forEach(button => button.addEventListener("click", filterCards));
+
+var clearAll = () => {
+    cards = document.getElementsByClassName("projects")
+    for (i = 0; i < cards.length; i++) {
+        cards[i].classList.remove("d-none")
+    }
+}

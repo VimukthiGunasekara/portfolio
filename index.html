@@ -128,154 +128,185 @@
             <div class="row">
                 <div class="row mt-5 mb-2" id="filter-buttons">
                     <div class="col-12">
-                        <button class="btn mb-2 me-1 btn-outline-secondary active" data-filter="all">Show All</button>
-                        <button class="btn mb-2 mx-1 btn-outline-secondary" data-filter="Front-End">Front-End</button>
-                        <button class="btn mb-2 mx-1 btn-outline-secondary" data-filter="Back-End">Back-End</button>
-                        <button class="btn mb-2 mx-1 btn-outline-secondary" data-filter="Inquirer-Module">Inquirer
+                        <button class="btn mb-2 me-1 btn-outline-secondary active" onclick="clearAll()">Show
+                            All</button>
+                        <button class="btn mb-2 mx-1 btn-outline-secondary"
+                            onclick="filter('Front-End')">Front-End</button>
+                        <button class="btn mb-2 mx-1 btn-outline-secondary"
+                            onclick="filter('Back-End')">Back-End</button>
+                        <button class="btn mb-2 mx-1 btn-outline-secondary" onclick="filter('Inquirer-Module')">Inquirer
                             Module</button>
-                        <button class="btn mb-2 mx-1 btn-outline-secondary" data-filter="WordPress">WordPress</button>
+                        <button class="btn mb-2 mx-1 btn-outline-secondary"
+                            onclick="filter('WordPress')">WordPress</button>
                     </div>
                 </div>
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="filterable-cards">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col projects">
+                        <div class="card card-bg shadow-sm">
+                            <img src="./assets/images/kanban-board.png" alt="img">
+                            <div class="card-body">
+                                <p class="card-tag ">Front-End</p>
+                                <h4 class="card-title">Kanban-Board React App</h4>
+                                <p class="card-text">that can be used to implement kanban to manage work at a
+                                    personal or organizational level.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-secondary"
+                                            href="https://github.com/VimukthiGunasekara/kanban-board">Github</a>
+                                        <a class="btn btn-sm btn-outline-secondary"
+                                            href="https://vimukthigunasekara.github.io/kanban-board/">Live</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="card card-bg shadow-sm" data-name="Front-End">
-                        <img src="./assets/images/kanban-board.png" alt="img">
-                        <div class="card-body">
-                            <h4 class="card-title">Kanban-Board React App</h4>
-                            <p class="card-text">that can be used to implement kanban to manage work at a
-                                personal or organizational level.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a class="btn btn-sm btn-outline-secondary"
-                                        href="https://github.com/VimukthiGunasekara/kanban-board">Github</a>
-                                    <a class="btn btn-sm btn-outline-secondary"
-                                        href="https://vimukthigunasekara.github.io/kanban-board/">Live</a>
+                    <div class="col projects">
+                        <div class="card shadow-sm card-bg">
+                            <img src="./assets/images/budget-tracker.png" alt="img">
+                            <div class="card-body">
+                                <p class="card-tag ">Front-End</p>
+                                <h4 class="card-title">Budget Tracker Web App</h4>
+                                <p class="card-text">An application designed to monitor earnings and spending while
+                                    handling various currency conversions.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-secondary"
+                                            href="https://github.com/cdennis27/budgettrackergroup2">Github</a>
+                                        <a class="btn btn-sm btn-outline-secondary"
+                                            href="https://cdennis27.github.io/budgettrackergroup2">Live</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col projects">
+                        <div class="card shadow-sm card-bg">
+                            <img src="./assets/images/get.gif" alt="img">
+                            <div class="card-body">
+                                <p class="card-tag ">Back-End</p>
+                                <h4 class="card-title">E-Commerce Back End</h4>
+                                <p class="card-text">Utilizing Express.js API and Sequelize, the e-commerce site's
+                                    backend is efficiently managed.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-secondary"
+                                            href="https://github.com/VimukthiGunasekara/e-commerce-back-end">Github</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="card shadow-sm card-bg" data-name="Front-End">
-                        <img src="./assets/images/budget-tracker.png" alt="img">
-                        <div class="card-body">
-                            <h4 class="card-title">Budget Tracker Web App</h4>
-                            <p class="card-text">An application designed to monitor earnings and spending while
-                                handling various currency conversions.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a class="btn btn-sm btn-outline-secondary"
-                                        href="https://github.com/cdennis27/budgettrackergroup2">Github</a>
-                                    <a class="btn btn-sm btn-outline-secondary"
-                                        href="https://cdennis27.github.io/budgettrackergroup2">Live</a>
+                    <div class="col projects">
+                        <div class="card shadow-sm card-bg">
+                            <img src="./assets/images/work-day-scheduler.png" alt="img">
+                            <div class="card-body">
+                                <p class="card-tag ">Front-End</p>
+                                <h4 class="card-title">Work Day Scheduler 📅 Generator</h4>
+                                <p class="card-text">A simple calendar app for scheduling your work day.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-secondary"
+                                            href="https://github.com/VimukthiGunasekara/work-day-scheduler">Github</a>
+                                        <a class="btn btn-sm btn-outline-secondary"
+                                            href="https://vimukthigunasekara.github.io/work-day-scheduler/">Live</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card shadow-sm card-bg" data-name="Back-End">
-                        <img src="./assets/images/get.gif" alt="img">
-                        <div class="card-body">
-                            <h4 class="card-title">E-Commerce Back End</h4>
-                            <p class="card-text">Utilizing Express.js API and Sequelize, the e-commerce site's
-                                backend is efficiently managed.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a class="btn btn-sm btn-outline-secondary"
-                                        href="https://github.com/VimukthiGunasekara/e-commerce-back-end">Github</a>
+                    <div class="col projects">
+                        <div class="card shadow-sm card-bg">
+                            <img src="./assets/images/professional-readme-generator.png" alt="img">
+                            <div class="card-body">
+                                <p class="card-tag ">Inquirer-Module</p>
+                                <h4 class="card-title">Professional Readme File
+                                    Generator</h4>
+                                <p class="card-text">GitHub README Generator Application and displays it on a newly
+                                    created README.md file.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-secondary"
+                                            href="https://github.com/VimukthiGunasekara/professional-readme-generator">Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+
+                    <div class="col projects">
+                        <div class="card shadow-sm card-bg">
+                            <img src="./assets/images/sk-realtors-2.png" alt="img">
+                            <div class="card-body">
+                                <p class="card-tag ">WordPress</p>
+                                <h4 class="card-title">SK-Realtors Agent Website in
+                                    Toronto</h4>
+                                <p class="card-text"> Design, developed and implemented SK-Realtors Agent Website in
+                                    Toronto.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-secondary"
+                                            href="https://SK-Realtors.ca/">Live</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="card shadow-sm card-bg" data-name="Front-End">
-                        <img src="./assets/images/work-day-scheduler.png" alt="img">
-                        <div class="card-body">
-                            <h4 class="card-title">Work Day Scheduler 📅 Generator</h4>
-                            <p class="card-text">A simple calendar app for scheduling your work day.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a class="btn btn-sm btn-outline-secondary"
-                                        href="https://github.com/VimukthiGunasekara/work-day-scheduler">Github</a>
-                                    <a class="btn btn-sm btn-outline-secondary"
-                                        href="https://vimukthigunasekara.github.io/work-day-scheduler/">Live</a>
+                    <div class="col projects">
+                        <div class="card shadow-sm card-bg">
+                            <img src="./assets/images/team-profile-generator.png" alt="img">
+                            <div class="card-body">
+                                <p class="card-tag ">Inquirer-Module</p>
+                                <h4 class="card-title">Team Profile Generator</h4>
+                                <p class="card-text">This app generates a team profile and displays it on a newly
+                                    created HTML page.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-secondary"
+                                            href="https://github.com/VimukthiGunasekara/team-profile-generator">Github</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card shadow-sm card-bg" data-name="Inquirer-Module">
-                        <img src="./assets/images/professional-readme-generator.png" alt="img">
-                        <div class="card-body">
-                            <h4 class="card-title">Professional Readme File
-                                Generator</h4>
-                            <p class="card-text">GitHub README Generator Application and displays it on a newly
-                                created README.md file.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a class="btn btn-sm btn-outline-secondary"
-                                        href="https://github.com/VimukthiGunasekara/professional-readme-generator">Github</a>
+                    <div class="col projects">
+                        <div class="card shadow-sm card-bg">
+                            <img src="./assets/images/flymeinternational.png" alt="img">
+                            <div class="card-body">
+                                <p class="card-tag ">WordPress</p>
+                                <h4 class="card-title">Flyme International Education
+                                    Consultants</h4>
+                                <p class="card-text"> Design, developed and implemented Flyme International Official
+                                    web site.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-secondary"
+                                            href="https://flymeinternational.com/">Live</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card shadow-sm card-bg" data-name="Inquirer-Module">
-                        <img src="./assets/images/team-profile-generator.png" alt="img">
-                        <div class="card-body">
-                            <h4 class="card-title">Team Profile Generator</h4>
-                            <p class="card-text">This app generates a team profile and displays it on a newly
-                                created HTML page.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a class="btn btn-sm btn-outline-secondary"
-                                        href="https://github.com/VimukthiGunasekara/team-profile-generator">Github</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card shadow-sm card-bg" data-name="WordPress">
-                        <img src="./assets/images/sk-realtors-2.png" alt="img">
-                        <div class="card-body">
-                            <h4 class="card-title">SK-Realtors Agent Website in
-                                Toronto</h4>
-                            <p class="card-text"> Design, developed and implemented SK-Realtors Agent Website in
-                                Toronto.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a class="btn btn-sm btn-outline-secondary" href="https://SK-Realtors.ca/">Live</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card shadow-sm card-bg" data-name="WordPress">
-                        <img src="./assets/images/flymeinternational.png" alt="img">
-                        <div class="card-body">
-                            <h4 class="card-title">Flyme International Education
-                                Consultants</h4>
-                            <p class="card-text"> Design, developed and implemented Flyme International Official
-                                web site.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a class="btn btn-sm btn-outline-secondary"
-                                        href="https://flymeinternational.com/">Live</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card shadow-sm card-bg" data-name="WordPress">
-                        <img src="./assets/images/vpac.png" alt="img">
-                        <div class="card-body">
-                            <h4 class="card-title">VPAC Official Business Website</h4>
-                            <p class="card-text">Design, developed and implemented vpac Official web site.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a class="btn btn-sm btn-outline-secondary" href="https://vpac.lk/">Live</a>
+                    <div class="col projects">
+                        <div class="card shadow-sm card-bg">
+                            <img src="./assets/images/vpac.png" alt="img">
+                            <div class="card-body">
+                                <p class="card-tag ">WordPress</p>
+                                <h4 class="card-title">VPAC Official Business Website</h4>
+                                <p class="card-text">Design, developed and implemented vpac Official web site.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-secondary" href="https://vpac.lk/">Live</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -318,7 +349,8 @@
     <div class="container mt-5 mb-5 position-relative overflow-hidden rounded publ-cont bg-pattern" id="publications">
         <div class="row">
             <div class="col-md-7 p-5">
-                <h3 class="name-grad-span">The Best Preferred Product Location Recommendation According to User Context
+                <h3 class="name-grad-span">The Best Preferred Product Location Recommendation According to User
+                    Context
                     and the Preferences
                 </h3>
                 <h5>Advances in ICT for Emerging Regions (ICTer), 2017 Seventeenth International Conference · Sep 6,
