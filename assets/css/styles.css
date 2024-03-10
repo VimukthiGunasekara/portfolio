@@ -32,6 +32,12 @@ body {
     color: var(--secondary-color);
 }
 
+.navbar-toggler-icon{
+    background-color:var(--secondary-color);
+    border-radius: 100%;
+    background-image: url(../images/icon.png);
+}
+
 .name-hero {
     font-size: 50px;
     font-weight: 600;
@@ -344,5 +350,13 @@ input:checked+.slider:before {
 
     .ng-margin{
         margin-top: -40px;
+    }
+
+    .navbar-nav{
+        text-align: center;
+    }
+
+    .switch{
+        margin-left: 0px;
     }
 }
