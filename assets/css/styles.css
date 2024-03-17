@@ -15,6 +15,10 @@ body {
     background-color: var(--primary-color);
 }
 
+.text{
+    color: var(--white-color);
+}
+
 .bg-pattern {
     background: var(--primary-color) radial-gradient(var(--secondary-color) 10%, transparent 1%);
     background-size: 11px 11px;
