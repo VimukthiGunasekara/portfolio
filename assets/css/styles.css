@@ -161,13 +161,19 @@ body {
     width: 200px;
     height: 200px;
     background-color: var(--white-color);
+    cursor: pointer;
 }
 
 .we-logo1 {
     width: 200px;
     height: 200px;
     background-color: var(--background-color);
+    cursor: pointer;
 }
+
+.custom-list {
+    list-style-type: none; 
+  }
 
 #rotatingImage {
     animation: rotateAnimation 60s linear infinite;
