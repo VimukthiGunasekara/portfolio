@@ -287,6 +287,17 @@ input:checked+.slider:before {
     }
 }
 
+@keyframes enter-animation {
+	0% {
+		transform: translateY(100px);
+    opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+    opacity: 1;
+	}
+}
+
 
 /*==== BrakPoints ===== */
 
@@ -360,3 +371,9 @@ input:checked+.slider:before {
         margin-left: 0px;
     }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+    .scroll-animation {
+      animation: enter-animation 0.8s 1;
+    }
+  }
