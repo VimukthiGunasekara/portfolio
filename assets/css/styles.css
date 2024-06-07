@@ -15,7 +15,7 @@ body {
     background-color: var(--primary-color);
 }
 
-.text{
+.text {
     color: var(--white-color);
 }
 
@@ -36,8 +36,8 @@ body {
     color: var(--secondary-color);
 }
 
-.navbar-toggler-icon{
-    background-color:var(--secondary-color);
+.navbar-toggler-icon {
+    background-color: var(--secondary-color);
     border-radius: 100%;
     background-image: url(../images/icon.png);
 }
@@ -161,25 +161,25 @@ body {
     width: 200px;
     height: 200px;
     background-color: var(--white-color);
-    cursor: pointer;
+    cursor: url("/portfolio/assets/images/click.png"),auto;
 }
 
 .we-logo1 {
     width: 200px;
     height: 200px;
-    background-color: var(--background-color);
-    cursor: pointer;
+    background-color: var(--background-color);    
+    cursor: url("/portfolio/assets/images/click.png"),auto;
 }
 
 .custom-list {
-    list-style-type: none; 
-  }
+    list-style-type: none;
+}
 
 #rotatingImage {
     animation: rotateAnimation 60s linear infinite;
 }
 
-.card-tag{
+.card-tag {
     font-size: 0px;
 }
 
@@ -241,7 +241,6 @@ input:checked+.slider:before {
     box-shadow: inset 15px -4px 0px 15px var(--yellow-color);
 }
 
-
 /*===== @keyframes ===== */
 @keyframes slide {
     0% {
@@ -298,14 +297,15 @@ input:checked+.slider:before {
 }
 
 @keyframes enter-animation {
-	0% {
-		transform: translateY(100px);
-    opacity: 0;
-	}
-	100% {
-		transform: translateY(0);
-    opacity: 1;
-	}
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 
@@ -360,30 +360,30 @@ input:checked+.slider:before {
         font-size: 0.8rem;
     }
 
-    .text-hero{
+    .text-hero {
         text-align: center;
         margin-top: 50px;
     }
 
-    .we-logo{
+    .we-logo {
         margin-top: -45px;
     }
 
-    .ng-margin{
+    .ng-margin {
         margin-top: -40px;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         text-align: center;
     }
 
-    .switch{
+    .switch {
         margin-left: 0px;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
     .scroll-animation {
-      animation: enter-animation 0.8s 1;
+        animation: enter-animation 0.8s 1;
     }
-  }
+}
